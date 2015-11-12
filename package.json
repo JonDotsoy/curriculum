@@ -1,0 +1,24 @@
+{
+  "name": "curriculum",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "docker": {
+    "ports": [
+      "9090:80"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-docker-tasks": "0.1.0-dev",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-util": "^3.0.7"
+  }
+}

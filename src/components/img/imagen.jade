@@ -1,0 +1,9 @@
+//- img.jade
+
+mixin imagen ()
+
+	if attributes.src
+
+		.img-imagen-box
+			img(src=attributes.src, alt=attributes.alt, class=attributes.class)
+

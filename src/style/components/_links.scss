@@ -1,0 +1,26 @@
+// _links.scss
+
+a {
+	&, &:focus, &:link, &:visited, &:hover, &:active {
+		color: black;
+		text-decoration: none;
+		outline: none;
+	}
+	&:hover, &:active, &:focus {
+		@media only screen {
+			color: $primary-color;
+			text-decoration: underline;
+		}
+	}
+
+	@media print {
+		&:after {
+			content: " ("attr(href)")";
+		}
+		&.no-decorate:after {
+			content: none;
+		}
+	}
+
+}
+

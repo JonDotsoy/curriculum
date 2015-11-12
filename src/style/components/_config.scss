@@ -1,0 +1,23 @@
+
+$primary-color: #82A0CC !default;
+$primary-color-print: black !default;
+$font-size-print: 9.4pt !default;
+// $font-size-screen: 10pt !default;
+$font-size-screen: $font-size-print !default;
+$font-family: 'Slabo 27px', serif !default;
+// $font-family: 'Lato', sans-serif;
+// $font-family: 'Poiret One', sans-serif;
+// $font-family: 'Oxygen', sans-serif;
+// $font-family: 'Alegreya', sans-serif;
+// $font-family: 'Maven Pro', sans-serif;
+$font-family: 'Karla', sans-serif;
+
+$background-color-screen: rgba(gray, 0.05) !default;
+$background-color-print: white !default;
+
+// Print Config
+$print-margin-left: 1.5cm;
+$print-margin-right: 1.5cm;
+$print-margin-top: 1.5cm;
+$print-margin-bottom: 1.0cm;
+

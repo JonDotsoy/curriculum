@@ -1,0 +1,12 @@
+// _imagen.scss
+
+.img-imagen-box {
+	img {
+		max-width: 100%;
+		&.circle {
+			border-radius: 100%;
+			// box-shadow: 0px 0px 0px 1px rgba(black, 0.2);
+			// padding: 4px;
+		}
+	}
+}

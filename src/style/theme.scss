@@ -1,0 +1,362 @@
+@import "components/config";
+
+@import "components/align";
+@import "components/print";
+@import "components/screen";
+
+@import "components/header-title";
+@import "components/divider";
+@import "components/imagen";
+@import "components/container";
+@import "components/links";
+
+@import "components/dataCollect/dataCollectTitleData";
+@import "components/dataCollect/dataCollectContent";
+@import "components/dataCollect/dataCollectTimeLineData";
+@import "components/dataCollect/dataCollectIconData";
+@import "components/dataCollect/dataCollectLevelData";
+
+
+// /* IMG Actions */
+// .img, img {
+// 	&.responsive {
+// 		max-width: 100%;
+// 	}
+
+// 	&.circle {
+// 		border-radius: 100%;
+// 	}
+// }
+
+
+
+// .divider {
+// 	display: block;
+// 	width: 100%;
+// 	position: relative;
+// 	&:before {
+// 		content: "";
+// 		width: 100%;
+// 		border-bottom: solid 1px $primary-color;
+// 		display: block;
+// 		position: absolute;
+// 		left: 0px;
+// 		top: 0px;
+// 		@media print {
+// 			border-bottom-color: black;
+// 		}
+// 	}
+// }
+
+
+
+// .curriculum-content {
+// 	margin-top: 1.5cm;
+// 	margin-bottom: 1.5cm;
+
+// 	.title-document {
+// 		// border-bottom: solid 1px $primary-color;
+// 		.title, .subtitle {
+// 			text-transform: uppercase;
+// 			// text-align: center;
+// 		}
+// 		.title {
+// 			font-size: 2.4em;
+// 			margin-bottom: 0px;
+// 			color: $primary-color;
+// 			@media print {
+// 				color: black;
+// 			}
+// 		}
+// 		.subtitle {
+// 			margin-top: 0px;
+// 			font-size: 1em;
+// 			font-weight: lighter;
+// 		}
+// 	}
+// }
+
+// .content {
+// 	margin-left: 2cm;
+// 	margin-right: 2cm;
+// }
+
+// .section, section {
+// 	margin-top: 1em;
+// 	margin-bottom: 1em;
+// }
+
+// .text-center {
+// 	text-align: center;
+// }
+
+// .text-right {
+// 	text-align: right;
+// }
+
+// a {
+// 	&, &:link, &:visited, &:hover {
+// 		color: black;
+// 		text-decoration: none;
+// 		outline: none;
+// 		&:hover, &:focus {
+// 			text-decoration: underline;
+// 		}
+// 	}
+// 	&[href] {
+// 		@media print {
+// 			&.url:before {
+// 				content: " http://";
+// 			}
+// 			&:after {
+// 				content: " (" attr(href) ")";
+// 			}
+// 			&.no-decorate:after {
+// 				content: none;
+// 			}
+// 		}
+// 	}
+// }
+
+// @for $i from 1 through 6 {
+// 	h#{$i} {
+// 		text-transform: uppercase;
+// 		margin: 0px;
+// 	}
+// }
+
+
+// .section.data-collection {
+// 	.icon-decorate {
+// 		color: #5F5F5F;
+// 		@media print {
+// 			color: grey;
+// 		}
+// 	}
+
+// 	.data {
+// 		.icon-separe {
+// 			margin-right: 2px;
+// 			color: $primary-color;
+// 			@media print {
+// 				color: gray;
+// 			}
+// 		}
+// 		.title {
+// 			font-weight: lighter;
+// 			display: inline-block;
+// 			// min-width: 190px;
+// 		}
+// 	}
+// 	&.promedio .data {
+// 		@media print {
+// 			// .icon-separe {
+// 			// 	display: none;
+// 			// }
+// 			// &:after {
+// 			// 	content: " [" attr(title) "]";
+// 			// 	font-size: .7em;
+// 			// 	display: block;
+// 			// 	font-weight: lighter;
+// 			// }
+// 		}
+// 	}
+
+// 	h3 {
+// 		font-size: 1.2em;
+// 		font-weight: bold;
+// 	}
+
+// 	h4 {
+// 		margin-top: 8px;
+// 		font-size: 1.15em;
+// 		font-weight: lighter;
+// 	}
+
+// }
+
+
+// .information-personal {
+// 	text-align: right;
+// 	.data {
+// 		.title {
+// 			font-size: 0.8em;
+// 			// text-transform: capitalize;
+// 			color: $primary-color;
+// 			@media print {
+// 				color: black;
+// 			}
+// 			margin: 0px;
+// 		}
+// 		.data {
+// 			text-align: right;
+// 			margin: 0px;
+// 			font-size: 1.2em;
+// 			margin-bottom: 10px;
+// 		}
+// 	}
+// }
+
+// .section.information-laboral {
+// 	text-align: right;
+// }
+
+
+// .laborum-control {
+// 	text-align: right;
+// 	position: relative;
+
+// 	&:before {
+// 		position: absolute;
+// 		content: "";
+// 		right: 3px;
+// 		top: 0px;
+// 		height: 100%;
+// 		width: 0px;
+// 		// border-radius: 2px;
+// 		border-right: solid 4px #E0E0E0;
+// 		@media print {
+// 			border-right: solid 4px gray;
+// 		}
+// 	}
+
+// 	.content-data {
+// 		position: relative;
+// 		padding-right: 16px;
+
+// 		&:after {
+// 			content: "";
+// 			position: absolute;
+// 			width: 8px;
+// 			height: 8px;
+// 			top: 12px;
+// 			right: 0px;
+// 			border-radius: 100%;
+// 			background-color: white;
+// 			border: solid 1px #E0E0E0;
+// 			@media print {
+// 				border: solid 1px gray;
+// 			}
+// 		}
+
+// 		padding-bottom: 10px;
+// 		padding-top: 7px;
+// 		.date, .title, .company, .address, .description {
+// 			// reset
+// 			font-size: 1em;
+// 			font-weight: normal;
+// 			text-transform: initial;
+// 			margin: 0px;
+// 			padding: 0px;
+// 		}
+// 		.date {
+// 			font-weight: bold;
+// 		}
+// 		.title {
+// 			font-weight: medium;
+// 			margin-bottom: 2px;
+// 			font-size: 1.2em;
+// 			color: $primary-color;
+// 			@media print {
+// 				color: black;
+// 			}
+// 		}
+// 		.company {
+// 			font-size: 1em;
+// 			small {
+// 				font-size: 0.9em;
+// 			}
+// 			.address {
+// 				font-style: italic;
+// 			}
+// 		}
+
+// 		.description {
+// 			padding-top: 5px;
+// 			font-style: italic;
+// 			&:after, &:before {
+// 				content: "\"";
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+// .data-education {
+// 	position: relative;
+// 	&:before {
+// 		position: absolute;
+// 		content: "";
+// 		left: 3px;
+// 		top: 0px;
+// 		height: 100%;
+// 		width: 0px;
+// 		// border-radius: 2px;
+// 		border-left: solid 4px #E0E0E0;
+// 		@media print {
+// 			border-left: solid 4px gray;
+// 		}
+// 	}
+
+// 	.content-data{
+// 		padding-left: 16px;
+// 		position: relative;
+// 		&:after {
+// 			content: "";
+// 			position: absolute;
+// 			width: 8px;
+// 			height: 8px;
+// 			top: 12px;
+// 			left: 0px;
+// 			border-radius: 100%;
+// 			background-color: white;
+// 			border: solid 1px #E0E0E0;
+// 			@media print {
+// 				border: solid 1px gray;
+// 			}
+// 		}
+
+// 		.date,
+// 		.grade,
+// 		.disiplina,
+// 		.activities,
+// 		.description {
+// 			// reset
+// 			font-size: 1em;
+// 			font-weight: normal;
+// 			text-transform: initial;
+// 			margin: 0px;
+// 			padding: 0px;
+// 		}
+// 		.date {
+// 			font-weight: bold;
+// 		}
+// 		.grade {
+// 			font-weight: medium;
+// 			margin-bottom: 2px;
+// 			font-size: 1.2em;
+// 			color: $primary-color;
+// 			@media print {
+// 				color: black;
+// 			}
+// 		}
+// 		.disiplina {
+// 			font-size: 1em;
+// 			small {
+// 				font-size: 0.9em;
+// 			}
+// 			.address {
+// 				font-style: italic;
+// 			}
+// 		}
+
+// 		.description, .activities {
+// 			padding-top: 5px;
+// 			font-style: italic;
+// 			&:after, &:before {
+// 				content: "\"";
+// 			}
+// 		}
+// 	}
+// }

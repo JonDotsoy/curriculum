@@ -1,0 +1,9 @@
+// _divider.scss
+.divider {
+	display: block;
+	border-bottom: solid 1px $primary-color;
+	width: 100%;
+	@media print {
+		border-bottom-color: $primary-color-print;
+	}
+}

@@ -1,0 +1,21 @@
+
+mixin dataCollectLevelData (lvl, _maxlvlDefault)
+	- var maxlvlDefault = (_maxlvlDefault == undefined) ? 7 : _maxlvlDefault
+	- var indlvl = 0
+	- var indnolvl = 0
+	- var maxlvl = (lvl < maxlvlDefault) ? lvl : maxlvlDefault
+	- var maxnolvl = maxlvlDefault - maxlvl
+	- var palt = Number((maxlvl / maxlvlDefault) * 100).toFixed(1)
+
+	.data-collect-level-data(title="Nivel de Interes " + maxlvl)
+		.row
+			.col-xs-7.content
+				block
+			.col-xs-5.align-right.level-dispos
+				while indlvl < maxlvl
+					- indlvl++
+					i.fa.fa-circle.icon-separe
+				while indnolvl < maxnolvl
+					- indnolvl++
+					i.fa.fa-circle-thin.icon-separe
+

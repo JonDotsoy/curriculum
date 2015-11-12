@@ -1,0 +1,13 @@
+//- container.jade
+
+mixin container ()
+	if !true
+		ul
+			each e,i in attributes
+				li #{i} = #{e}
+
+	if block
+		.container-margin-spaces(class={
+			"no-top": attributes["no-top"]
+		})
+			block

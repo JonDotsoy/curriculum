@@ -1,0 +1,16 @@
+
+.data-collect-level-data {
+	.content {
+		font-size: 1.05rem;
+	}
+	.level-dispos {
+		color: $primary-color;
+		@media print {
+			color: $primary-color-print;
+
+		}
+		.icon-separe {
+			padding-left: 2px;
+		}
+	}
+}

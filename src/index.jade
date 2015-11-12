@@ -1,0 +1,190 @@
+include components/headerTitle/headerTitle
+include components/divider/divider
+include components/print/page
+include components/dataCollect/dataCollectIconData
+include components/dataCollect/dataCollectLevelData
+include components/dataCollect/dataCollectTitleData
+include components/dataCollect/dataCollectTimeLineData
+include components/img/imagen
+include components/container/container
+include components/dataCollect/dataCollectContent
+
+
+doctype html
+html(lang='es-cl')
+	head
+		meta(charset='UTF-8')
+		title Jonathan Degado Zamorano | Curriculum
+		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+
+		link(href='https://fonts.googleapis.com/css?family=Slabo+27px', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Poiret+One', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Oxygen', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Alegreya', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Maven+Pro', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Karla', rel='stylesheet', type='text/css')
+
+		link(rel='stylesheet', href='style/normalize.css')
+		link(rel='stylesheet', href='style/flexboxgrid.min.css')
+		link(rel='stylesheet', href='style/font-awesome.min.css')
+		link(rel='stylesheet', href='style/theme.css')
+
+	body
+
+		+page()
+			+container()(no-top)
+				+headerTitle()
+			+container()
+				.row
+					.col-xs-6.align-right
+
+						.row
+							.col-xs-6
+								+imagen()(src='image/profile-grayscale.jpg').circle
+
+							.col-xs-6
+								+dataCollectTitleData("Nombre") Jonathan Delgado Zamorano
+								+dataCollectTitleData("Fecha de Nacimiento") Agosto, 1992
+								+dataCollectTitleData("Educación") DuocUC
+								+dataCollectTitleData("Nacionalidad") Chilena
+
+						+dataCollectContent("Extracto")
+							p Profesional altamente calificado en el desarrollo de tecnologías Web. Orientado a las constante mejorando las buenas prácticas como desarrollador y en la buena gestión de los procesos de un proyecto informático.
+							p Capacitado y con experiencia en las áreas de mayor riesgo durante los procesos que requiere un proyecto de desarrollo informático, pongo énfasis en las altas necesidades de los clientes para así poder brindar un mejor producto de valor para los clientes de la organización.
+						+dataCollectContent("Experiencia Laboral")
+
+							+dataCollectTimeLineData("Sep &boxh; Oct, 2015", {address: "Of. 707, Nueva Providencia 1881, Providencia, Región Metropolitana",})
+								h4 Consultor Ingeniero DevOps
+								h5 OTECNYA
+								p.stract Consultor en Desarrollo de sistemas, encargado de la planificación, manejo e implementación de arquitectura web que apoya las operaciones de OTECNYA.
+
+							+dataCollectTimeLineData("Mar &boxh; May, 2015", {
+								date: "Mar &boxh; May, 2015",
+								title: "Administrador de Sistemas DepOps",
+								company: "ingeniería en Gestión TI Limitada",
+								description: "Encargado de la migración e instalación de Servidores y Servicios para Synapcis Chile.",
+								})
+								h4 Administrador de Sistemas DepOps
+								h5 ingeniería en Gestión TI Limitada
+								p.stract Encargado de la migración e instalación de Servidores y Servicios para Synapsis Chile.
+
+							+dataCollectTimeLineData("Feb &boxh; Mar, 2014", {
+								date: "Feb &boxh; Mar, 2014",
+								title: "Técnico Informatico",
+								company: "MUPOR Ltda",
+								description: "Personal cuya función corresponde la responsabilidad de recolección integra de información de equipamiento tecnológico de las sucursales BBVA.",
+								address: "Ahumada 254 Of. 408, Santiago, Chile",
+								})
+								h4 Técnico Informático
+								h5 MUPOR Ltda
+								p.stract Personal cuya función corresponde la responsabilidad de recolección integra de información de equipamiento tecnológico de las sucursales BBVA.
+							+dataCollectTimeLineData("May &boxh; Feb, 2012", {
+								date: "May &boxh; Feb, 2012",
+								title: "Técnico Cetecom",
+								company: "DuocUC",
+								description: "Cumplí con la función de Revisión de salar, encargado de ayudar en las instalaciones y reparaciones de equipamiento tecnológico dentro de la sede DuocUC.",
+								address: "Av Américo Vespucio 1501 Mall Plaza Oeste, Cerrillos.",
+								})
+								h4 Técnico Cetecom
+								h5 DuocUC
+								p.stract Cumplí con la función de Revisión de salar, encargado de ayudar en las instalaciones y reparaciones de equipamiento tecnológico dentro de la sede DuocUC.
+
+					.col-xs-6
+
+						+dataCollectContent()
+
+							+dataCollectIconData()().fa.fa-mobile
+								a.no-decorate(href='tel:+56961947460') +56 9 6194 7460
+							+dataCollectIconData()().fa.fa-envelope-o
+								a.no-decorate(href='mailto:hi@jon.soy') hi@jon.soy
+							+dataCollectIconData()().fa.fa-home Maipú, Chile.
+							+dataCollectIconData()().fa.fa-code
+								a(href='http://jon.soy') jon.soy
+							+dataCollectIconData()().fa.fa-twitter
+								a(href='https://twitter.com/jonDotsoy') @JonDotsoy
+							+dataCollectIconData()().fa.fa-github
+								a(href='https://github.com/jonDotsoy') /JonDotsoy
+							+dataCollectIconData()().fa.fa-linkedin
+								a(href="https://cl.linkedin.com/in/jonadelgado") JonaDelgado
+
+						+dataCollectContent("Áreas de Interés")
+
+							+dataCollectLevelData(7)(): .title Desarrollo de Sistemas
+							+dataCollectLevelData(7)(): .title Operaciones
+							+dataCollectLevelData(5)(): .title Análisis de Proyecto
+							+dataCollectLevelData(6)(): .title Diseño de Sistemas
+							+dataCollectLevelData(5)(): .title Gestión de Proyectos
+
+						+dataCollectContent("Aptitudes")
+
+							+dataCollectContent("Lenguajes de Programación")
+								+dataCollectLevelData(7)(): .title JavaScript
+								+dataCollectLevelData(7)(): .title Json
+								+dataCollectLevelData(6)(): .title LESS
+								+dataCollectLevelData(5)(): .title Ruby
+								+dataCollectLevelData(5)(): .title Python
+								+dataCollectLevelData(5)(): .title SASS
+								+dataCollectLevelData(1)(): .title CSS
+								+dataCollectLevelData(3)(): .title PHP
+								+dataCollectLevelData(3)(): .title ASP.NET
+								+dataCollectLevelData(2)(): .title Java
+
+							+dataCollectContent("Frameworks")
+								+dataCollectLevelData(7)(): .title CapJS
+								+dataCollectLevelData(6)(): .title Express
+								+dataCollectLevelData(7)(): .title SailsJS
+								+dataCollectLevelData(7)(): .title ReactJS
+								+dataCollectLevelData(5)(): .title Laravel
+								+dataCollectLevelData(5)(): .title Django
+								+dataCollectLevelData(7)(): .title AngularJS
+
+							+dataCollectContent("Base de Datos")
+								+dataCollectLevelData(7)(): .title RethinkDB
+								+dataCollectLevelData(7)(): .title Mongodb
+								+dataCollectLevelData(6)(): .title MySQL
+								+dataCollectLevelData(2)(): .title SQLServer
+								+dataCollectLevelData(4)(): .title Oracle
+
+							+dataCollectContent("Utilidades")
+								+dataCollectLevelData(7)(): .title Docker
+								+dataCollectLevelData(7)(): .title RESTful
+								+dataCollectLevelData(7)(): .title SocketIO
+
+
+		+page()
+
+			+container()
+				.row
+					.col-xs-6.align-right
+						+dataCollectContent("Educación")
+							+dataCollectTimeLineData("2011 &boxh; 2015")
+								h4 Grado en Ingeniería
+								h3 Ingeniería informática
+								h4 DuocUC
+								br
+								p.stract.activities Me he unido a CITT (Centro de Innovación y Transferencia Tecnológica), en el que impulse mi crecimiento personal al desarrollar tecnología para la WEB y Robótica.
+								br
+								p.stract.description Dentro de DuocUC me eduque en las bases de la tecnología de la información, permitiendo ser un profesional calificado para la Ingeniería de proyectos informáticos, y ser capaz frente a la toma de decisiones para obtener el éxito del trabajo en el que participe.
+
+						+dataCollectContent("Proyectos")
+							+dataCollectTimeLineData("Sep 2014 - Oct 2015")
+								h4 Sistema Clínico Cottolengo
+								a(href="http://slides.com/aracelli/proyecto-cottolengo/#/") slides.com
+
+
+					.col-xs-6
+
+						+dataCollectContent("Idiomas")
+							+dataCollectLevelData(7)(): .title.tag-print(title="Nativo") Español
+							+dataCollectLevelData(4)(): .title.tag-print(title="Intermedio") Ingles
+						+dataCollectContent("Voluntariado")
+							+dataCollectTimeLineData("may 2013 &boxh; - Actualidad")
+								h4 Consultor, Alumno Ayudante
+								h5 Ciencia y tecnología
+								p.stract Como Alumno, Participe de las actividades de CITT, en el cual puede desempeñar de mejor manera mis capacidades como Desarrollador y Administrador de proyectos, haciendo partícipe de los eventos y ayudado con consolidar el CITT dentro de Plaza Oeste.
+
+						+dataCollectContent("Oportunidades que busco")
+							+dataCollectIconData()().fa.fa-tag Pertenecer al consejo de una organización sin ánimo de lucro
+							+dataCollectIconData()().fa.fa-tag Voluntariado basado en aptitudes (consultoría gratuita)
+

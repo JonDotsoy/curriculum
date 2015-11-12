@@ -1,0 +1,22 @@
+
+.data-collect-title-data {
+	.title {
+		color: $primary-color;
+		@media print {
+			color: $primary-color-print;
+		}
+		font-size: 1.0rem;
+		margin: 0px;
+		font-weight: lighter;
+	}
+	.data {
+		font-size: 1.2rem;
+		font-weight: bold;
+		@media print {
+			font-weight: medium;
+		}
+	}
+	margin-bottom: 8px;
+}
+
+

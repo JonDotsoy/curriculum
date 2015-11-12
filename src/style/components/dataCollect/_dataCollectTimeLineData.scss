@@ -1,0 +1,78 @@
+
+.data-collect-timeline-data {
+	position: relative;
+	margin: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+
+	&:before {
+		position: absolute;
+		content: "";
+		left: 4px;
+		.align-right & {
+			left: auto;
+			right: 4px;
+		}
+		top: 0px;
+		height: 100%;
+		width: 0px;
+		border-right: solid 4px #E0E0E0;
+		@media print {
+			border-right: solid 4px gray;
+		}
+	}
+
+	.content-data {
+		position: relative;
+		padding-left: 16px;
+		.align-right & {
+			padding-right: 16px;
+			padding-left: 0px;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			top: 3px;
+			left: 0px;
+			.align-right & {
+				left: auto;
+				right: 0px;
+			}
+			border-radius: 100%;
+			background-color: white;
+			border: solid 2px #E0E0E0;
+			@media print {
+				border: solid 2px gray;
+			}
+		}
+
+		.title {
+			font-weight: bold;
+			margin: 0px;
+			font-size: 1rem;
+		}
+
+		@for $i from 1 through 6 {
+			h#{$i} {
+				margin: 0px;
+			}
+		}
+
+		p {
+			margin: 0px;
+		}
+
+		.stract {
+			font-style: italic;
+
+			&:before, &:after {
+				content: '"';
+			}
+		}
+
+	}
+}
+

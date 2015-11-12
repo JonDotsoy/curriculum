@@ -1,0 +1,24 @@
+{
+  "name": "curriculum",
+  "description": "",
+  "private": true,
+  "main": "gulpfile.js",
+  "authors": [
+    "Jon Dotsoy <hi@jon.soy>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "flexboxgrid": "~6.3.0",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}

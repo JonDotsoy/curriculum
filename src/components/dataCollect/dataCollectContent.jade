@@ -1,0 +1,10 @@
+
+mixin dataCollectContent (_title)
+	if !attributes.disabled
+		.data-collect-content
+			if _title
+				h3.title= _title
+			.body-content
+				block
+
+

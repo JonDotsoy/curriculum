@@ -1,0 +1,22 @@
+
+mixin dataCollectTimeLineData (title)
+
+	if block
+		.data-collect-timeline-data
+			.content-data
+				if title
+					h4.title!= title
+
+				block
+
+
+			//- if company
+			//- 	h4.company= company
+			//- 		if address
+			//- 			small.address
+			//- 				= " ("
+			//- 				= address
+			//- 				= ")"
+			//- if description
+			//- 	p.description= description
+

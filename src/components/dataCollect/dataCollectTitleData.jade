@@ -1,0 +1,12 @@
+
+mixin dataCollectTitleData (_title)
+	- var title = (_title == undefined) ? false : _title
+
+	.data-collect-title-data
+		if title
+			h3.title= title
+			if block
+				.data
+					block
+
+
