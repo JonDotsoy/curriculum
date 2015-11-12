@@ -57,9 +57,9 @@ gulp.task("jade", function (done) {
 
 
 
-gulp.task("build-source", ["copy", "sass", "html", "jade"]);
+gulp.task("build-source", ["copy", "sass", "jade"]);
 
-gulp.task("watch", ["copy", "sass", "html", "jade"], function () {
+gulp.task("watch", ["copy", "sass", "jade"], function () {
 	gulp.watch("src/**/*.scss", ["sass"]);
 	gulp.watch("src/**/*.jade", ["jade"]);
 	gulp.watch("src/**/*.html", ["copy:html"]);
